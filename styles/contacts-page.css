@@ -1,0 +1,166 @@
+.contacts-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10% 90px 10%;
+}
+
+.form-map {
+    display: flex;
+    margin-top: 65px;
+    gap: 3.2vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+input,
+textarea {
+    background: var(--color-gray-light);
+    outline: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+form button {
+    align-self: flex-end;
+}
+
+form label {
+    position: relative;
+    width: 500px;
+    height: 40px;
+}
+
+.textarea {
+    height: 120px;
+}
+
+input + div,
+textarea + div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 1px solid var(--color-main);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity var(--animation);
+} 
+
+input:focus + div,
+textarea:focus + div {
+    opacity: 1;
+}
+
+.form-map img {
+    border-radius: 5px;
+}
+
+.input-name {
+    font-family: var(--font-family-lato-r);
+    font-size: 20px;
+    color: var(--color-black);
+}
+
+input::placeholder,
+textarea::placeholder {
+    opacity: .5;
+}
+
+input::placeholder,
+textarea::placeholder,
+input,
+textarea {
+    font-family: var(--font-family-lato-l);
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+@media (max-width: 1150px) {
+    .form-map img {
+        height: 35vw;
+    }
+
+    form label {
+        width: 35vw;
+    }
+
+    form {
+        height: 35vw;
+    }
+
+    .textarea {
+        height: 7vw;
+    }
+
+    .contacts-main {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .form-map {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6vw;
+    }
+
+    .form-map img {
+        height: 50vw;
+    }
+
+    form,
+    form label {
+        width: 50vw;
+    }
+
+    form {
+        height: initial;
+    }
+
+    .textarea {
+        height: 100px;
+    }
+
+    form button {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .form-map img {
+        height: 40vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .form-map img,
+    form,
+    form label {
+        width: 80vw;
+    }
+
+    .form-map img {
+        height: 60vw;
+    }
+
+    .contacts-main {
+        padding-bottom: 13vw;
+    }
+
+    .input-name {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,37 @@
+.welcome-button,
+.primary-button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: var(--font-family-work-r);
+    width: 170px;
+    height: 48px;
+    background: var(--color-black);
+    color: var(--color-white);
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background var(--animation);
+}
+
+.welcome-button {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+.primary-button:hover {
+    background: var(--color-gray-dark);
+}
+
+.welcome-button:hover {
+    background: var(--color-gray-light);
+}
+
+@media (max-width: 500px) {
+    .welcome-button,
+.primary-button {
+    font-size: 16px;
+    width: 140px;
+    height: 38px;
+}
+}

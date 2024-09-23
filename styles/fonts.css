@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'WorkB';
+    src: url('../fonts/WorkSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'WorkM';
+    src: url('../fonts/WorkSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'WorkR';
+    src: url('../fonts/WorkSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'WorkL';
+    src: url('../fonts/WorkSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'LatoB';
+    src: url('../fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'LatoR';
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'LatoL';
+    src: url('../fonts/Lato-Light.ttf');
+}
+
+@font-face {
+    font-family: 'LatoT';
+    src: url('../fonts/Lato-Thin.ttf');
+}
