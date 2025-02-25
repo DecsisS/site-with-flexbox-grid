@@ -6,4 +6,6 @@ Multipage site adapted to any screen. Click [here](https://decsiss.github.io/sit
 
 Used technologies: Flexbox, Grid
 
+Design by Figma
+
 Stack of this project: HTML, CSS
